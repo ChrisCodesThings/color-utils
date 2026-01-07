@@ -1,0 +1,57 @@
+{
+    "name": "@chriscodesthings/stub-repo",
+    "version": "0.1.0",
+    "description": "npm package template",
+    "keywords": [
+        "stub",
+        "package",
+        "template"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/ChrisCodesThings/stub-repo.git"
+    },
+    "bugs": {
+        "url": "https://github.com/ChrisCodesThings/stub-repo/issues"
+    },
+    "dependencies": {},
+    "devDependencies": {
+        "auto-changelog": "^2.4.0",
+        "typescript": "^5.4.5",
+        "vitest": "^1.6.0"
+    },
+    "type": "module",
+    "main": "dist/index.js",
+    "types": "dist/index.d.ts",
+    "unpkg": "dist/index.js",
+    "jsdelivr": "dist/index.js",
+    "exports": {
+        ".": {
+            "types": "./dist/index.d.ts",
+            "import": "./dist/index.js"
+        }
+    },
+    "files": [
+        "/dist"
+    ],
+    "sideEffects": false,
+    "engines": {
+        "node": ">=18.0.0"
+    },
+    "scripts": {
+        "build": "tsc",
+        "test": "vitest run && npm run build",
+        "version": "auto-changelog -p && git add CHANGELOG.md",
+        "postversion": "git push && git push --tags"
+    },
+    "publishConfig": {
+        "access": "public"
+    },
+    "author": {
+        "name": "Chris Dabrowa",
+        "email": "fanmail@chris.dabrowa.uk",
+        "url": "http://chris.dabrowa.uk/code/js"
+    },
+    "contributors": [],
+    "license": "MIT"
+}
