@@ -1,7 +1,7 @@
 {
-    "name": "@chriscodesthings/stub-repo",
+    "name": "@chriscodesthings/color-utils",
     "version": "0.1.0",
-    "description": "npm package template",
+    "description": "A collection of lightweight utilities for color identification, conversion, and simple manipulation",
     "keywords": [
         "stub",
         "package",
@@ -9,12 +9,15 @@
     ],
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/ChrisCodesThings/stub-repo.git"
+        "url": "git+https://github.com/ChrisCodesThings/color-utils.git"
     },
     "bugs": {
-        "url": "https://github.com/ChrisCodesThings/stub-repo/issues"
+        "url": "https://github.com/ChrisCodesThings/color-utils/issues"
     },
-    "dependencies": {},
+    "dependencies": {
+        "@chriscodesthings/is": "*",
+        "@chriscodesthings/parse-number": "*"
+    },
     "devDependencies": {
         "auto-changelog": "^2.4.0",
         "typescript": "^5.4.5",
