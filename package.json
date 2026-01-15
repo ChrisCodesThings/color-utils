@@ -3,9 +3,12 @@
     "version": "0.1.0",
     "description": "A collection of lightweight utilities for color identification, conversion, and simple manipulation",
     "keywords": [
-        "stub",
-        "package",
-        "template"
+        "color",
+        "utilities",
+        "random",
+        "css",
+        "parse",
+        "validation"
     ],
     "repository": {
         "type": "git",
@@ -16,7 +19,8 @@
     },
     "dependencies": {
         "@chriscodesthings/is": "*",
-        "@chriscodesthings/parse-number": "*"
+        "@chriscodesthings/parse-number": "^1.0.0",
+        "css-color-names": "*"
     },
     "devDependencies": {
         "auto-changelog": "^2.4.0",
